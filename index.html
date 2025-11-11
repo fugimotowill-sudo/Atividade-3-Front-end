@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+
+        <h2>Formulário de Contato</h2>
+        <p>Preencha os campos abaixo para enviar sua mensagem.</p>
+
+        <form action="/enviar-contato" method="get">
+
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="usuario_nome" required>
+                <br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="usuario_email" 
+                required placeholder="ex: seuemail@dominio.com">
+                <br>
+                  
+         
+         
+                <label for="telefone">Telefone (Opcional):</label>
+                <input type="tel" id="telefone" name="usuario_telefone"
+                 placeholder="(XX) XXXXX-XXXX">
+                <br>
+           
+
+          
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto_contato">
+                    <option value="">-- Selecione um assunto --</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="geral">Informações Gerais</option>
+                </select>
+                <label for="">
+                    <input type="checkbox" id="News Latter" name="receber"
+                    value="sim"> Deseja Receber?
+                </label>
+                <button type="submit">Enviar Mensagem></button>
+                <section>
+                    <br>
+                
+</body>
+</html>
